@@ -1,0 +1,60 @@
+.contact {
+    &__box {
+        gap: 20px;
+        background: var(--body_background);
+    }
+
+    &__box &__icon {
+        background: var(--accent_background);
+    }
+
+    &__box:nth-child(3n) &__icon {
+        background: var(--accent_background_main);
+    }
+
+    &__info {
+        display: grid;
+        grid-template-rows: min-content;
+    }
+
+    &__info *:nth-child(1) {
+        margin-bottom: 5px;
+    }
+
+
+    &__form {
+        display: grid;
+        gap: clamp(1.25rem, 0.773rem + 2.39vw, 2.563rem);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 150px;
+    }
+
+    &__input {
+        padding: 18px 31px;
+        box-shadow: var(--shadow);
+    }
+
+    &__input-max {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    &__btn {
+        justify-self: baseline;
+    }
+
+    @media (max-width: 650px) {
+
+        &__form {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 148px;
+        }
+
+        &__input-max {
+            grid-column-end: 1;
+            grid-row-end: 6;
+            grid-row-start: 5;
+        }
+    }
+
+}

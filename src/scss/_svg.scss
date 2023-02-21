@@ -1,0 +1,156 @@
+.roulette {
+
+  &:hover &__item_1 {
+    animation: roulette 1.9s infinite linear;
+  }
+
+  @keyframes roulette {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  &__item_1 {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+}
+
+.key {
+
+  &__item_1,
+  &__item_2 {
+    transition: 1.2s all;
+  }
+
+  &:hover &__item_1,
+  &:hover &__item_2 {
+    transform: translateY(-19px);
+  }
+}
+
+.paintbrush {
+
+  &__item_1,
+  &__item_3,
+  &__item_4,
+  &__item_5,
+  &__item_2 {
+    transition: 2s all;
+  }
+
+  &:hover &__item_1,
+  &:hover &__item_3,
+  &:hover &__item_4,
+  &:hover &__item_5,
+  &:hover &__item_2 {
+    transition: 2s all;
+  }
+
+  &:hover &__item_2 {
+    d: path('M78 7V54');
+  }
+
+  &:hover &__item_3 {
+    d: path('M72 10V53');
+  }
+
+  &:hover &__item_4 {
+    d: path('M78 17V61');
+  }
+
+  &:hover &__item_5 {
+    d: path('M72 26V54');
+  }
+
+  &:hover &__item_1 {
+    d: path('M86 2H65.5L65 60C65.5665 63.1361 66.6012 63.9012 69 64.5V76C71.7671 79.7435 72.7768 78.5684 74.5 76V72.5C76.8769 69.4455 77.8778 70.1214 79.5 72.5V82C82.2983 86.2521 83.6931 85.77 86 82V2Z');
+  }
+}
+
+.canvas {
+
+  &:hover &__item_2 {
+    transition: 1.2s linear;
+  }
+
+  &:hover &__item_3 {
+    transition: 2.1s linear .5s;
+  }
+
+  &__item_2 {
+    stroke-dasharray: 100%;
+    stroke-dashoffset: -80;
+  }
+
+  &:hover &__item_2 {
+    stroke-dashoffset: 10;
+  }
+
+  &__item_3 {
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 290;
+  }
+
+  &:hover &__item_3 {
+    stroke-dashoffset: 200;
+  }
+
+
+  &__item_1 {
+    transform: translate(2px, 3px);
+  }
+
+  &:hover &__item_1 {
+    animation: canvas_1 .7s 1 linear 0.4s alternate, canvas_2 1.8s 1 alternate 1s;
+    transform: translate(2px, 3px);
+  }
+
+  @keyframes canvas_1 {
+    0% {
+      transform: translate(-52px, -36px);
+      offset-path: path("M7 40.5585C12.0519 42.8168 13.8392 42.4591 17.5 40.5584C22.3485 38.0649 25.4582 38.2956 30 40.5585C34.3935 42.5321 36.718 42.6964 40.5 40.5584C44.96 37.5346 51.3516 39.2533 55.5 42");
+      offset-distance: 100%;
+    }
+
+    100% {
+      transform: translate(-52px, -36px);
+      offset-path: path("M7 40.5585C12.0519 42.8168 13.8392 42.4591 17.5 40.5584C22.3485 38.0649 25.4582 38.2956 30 40.5585C34.3935 42.5321 36.718 42.6964 40.5 40.5584C44.96 37.5346 51.3516 39.2533 55.5 42");
+      offset-distance: 0%;
+    }
+  }
+
+  @keyframes canvas_2 {
+    0% {
+      transform: translate(-52px, -36px);
+      offset-path: path("M18.5 40C23.5 27 40.5 27.5 45 39");
+      offset-distance: 0%;
+    }
+
+    100% {
+      transform: translate(-52px, -36px);
+      offset-path: path("M18.5 40C23.5 27 40.5 27.5 45 39");
+      offset-distance: 100%;
+    }
+  }
+}
+
+.pencil {
+  &__item {
+    offset-path: path("M31.0001 46C27.1576 26.7865 34.6803 27.6571 50.0001 31.5C54.8568 40.4579 53.2446 45.1987 48.0001 53.5L31.0001 65.5L46.5001 80");
+    offset-distance: 0%;
+    transform: translate(-30px, -49px);
+    offset-rotate: 10deg;
+  }
+
+  &:hover &__item {
+    animation: pencil 1s infinite alternate;
+  }
+
+  @keyframes pencil {
+    100% {
+      offset-rotate: 281deg;
+      offset-distance: 100%;
+    }
+  }
+}

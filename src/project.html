@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+    "title":"project"
+})
+<body>
+<main class="main">
+    @@include('html/nav.html',{
+    })
+    
+    @@include('html/header.html',{
+        "title_style": 'title',
+        "header_img":'img_2.png',
+        "title":"project",
+        "text":"Home / Projects Archive / Single Project"
+    })
+
+    <section class="wrapper flex flex-direction">
+        <div class="text">
+            <p>Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat congue</p>
+            <p>Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus rutrum leo consectetur accumsan. Vivamus viverra ante turpis, dignissim condimentum elit egestas sit amet. Phasellus faucibus pellentesque</p>
+        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+        <img src="" alt="img">
+        </div>
+        <div class="text">
+            <p class="subtitle">London Palace</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+            </section>
+
+    <div class="services services__wrap wrapper">
+        @@include('html/boxMax.html',{
+            "title_style": '',
+            "text_style": 'slogan',
+            "button_style": 'cube',
+            "content_style": 'services__wrap-content',
+            context: {
+                arr: [{ "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},]
+              },
+        })
+    </div>
+</main>
+    @@include('html/footer.html',{
+    })
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+    "title":"services single"
+})
+<body>
+    <main class="main">
+    @@include('html/nav.html',{
+    })
+    
+    @@include('html/header.html',{
+        "title_style": 'title',
+        "header_img":'img_4.png',
+        "title":"services single",
+        "text":"Home / Service / Single Service"
+    })
+
+    <section class="services services__wrap wrapper">
+        @@include('html/boxMax.html',{
+            "title_style": '',
+            "text_style": 'slogan',
+            "button_style": 'cube',
+            "content_style": 'services__wrap-content',
+            context: {
+                arr: [{ "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},]
+              },
+        })
+    </section>
+
+    <section class="wrapper flex flex-direction">
+        <div class="text">
+            <p class="subtitle">Petrolieum & Gas Refinery</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestias totam cupiditate dicta, deserunt aspernatur! Inventore totam id quam dolores, culpa tempore, provident cupiditate voluptatibus dolorem natus perferendis. Unde, nostrum.</p>
+    
+        <div class="services services__direction wrapper">
+            @@include('html/boxMax.html',{
+                "title_style": 'subtitle',
+                "text_style": '',
+                "button_style": 'cube',
+                "content_style": 'services__direction-content background-accent',
+                context: {
+                    arr: [{ "title": "Research & Analysis", "text": "lorem ipsum...", "button": ">", "img": ""},]
+                  },
+            })
+        </div>
+    
+    </div>
+        <div class="services services__wrap wrapper">
+            @@include('html/boxMax.html',{
+                "title_style": '',
+                "text_style": 'slogan',
+                "button_style": 'cube',
+                "content_style": 'services__wrap-content',
+                context: {
+                    arr: [{ "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+            { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+            { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+            { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},]
+                  },
+            })
+        </div>
+            </section>
+
+            <section class="services wrapper text">
+                    <p class="subtitle">Petrolieum & Gas Refinery</p>
+
+               <div class="flex services__wrap">
+                @@include('html/boxMax.html',{
+                    "title_style": '',
+                    "text_style": 'slogan',
+                    "button_style": '',
+                    "content_style": 'services__wrap-content Benefits services__wrap-min',
+                    context: {
+                        arr: [{ "title": "Explore Service", "text": "So now they have their own book heritage restorers.", "button": "Read","img": ""},
+                { "title": "Explore Service", "text": "So now they have their own book heritage restorers.", "button": "Read","img": ""},
+                { "title": "Explore Service", "text": "So now they have their own book heritage restorers.", "button": "Read","img": ""},
+                { "title": "Explore Service", "text": "So now they have their own book heritage restorers.", "button": "Read","img": ""},]
+                      },
+                })
+               </div>
+            </section>
+        </main>
+    @@include('html/footer.html',{
+    })
+</body>
+</html>

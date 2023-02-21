@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+    "title":"about"
+})
+<body>
+<main class="main">
+    @@include('html/nav.html',{
+    })
+    
+    @@include('html/header.html',{
+        "title_style": 'title',
+        "header_img":'img1.jpg',
+        "title":"about",
+        "text":"Home / About Us",
+    })
+
+
+    <section class="wrapper wrapper-margin">
+        @@include('html/additionally.html',{
+            "telephone":"",
+            "messeng":"",
+            "Benefits":{
+                "info":'ok',
+                "tag":'<a data-text="Call Us Today" class="subtitle" href="#">+1 123 4567 789</a>',
+            },
+        })
+    </section>
+
+    <section class="wrapper flex flex-direction">
+        <div>
+            <img src="files/img/img_4.png" alt="img">
+        </div>
+        <div class="text">
+            @@include('html/title.html',{
+                "style":"",
+                "subtitle":"About Us",
+                "title":"We ‘re providing the best customer service",
+            })
+        
+            <p>Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat congue</p>
+            <p>Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus rutrum leo consectetur accumsan. Vivamus viverra ante turpis, dignissim condimentum elit egestas sit amet. Phasellus faucibus pellentesque</p>
+            <button class="btn-main">Learn more</button>
+        </div>
+            </section>
+
+
+    <section class="wrapper flex flex-direction">
+        <div class="text">
+            @@include('html/title.html',{
+                "style":"",
+                "subtitle":"Appointment",
+                "title":"Request a Quote",
+            })
+
+            @@include('html/contact_form.html',{
+            })
+        </div>
+        <div class="text">
+            <div class="box-additionally canvas">
+                <div class="cube">
+                    <svg width="87" height="88" viewBox="0 0 87 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 26.5L18 30.5" stroke="#41444B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M31.8284 19V24.6569" stroke="#41444B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M50 26L46 30" stroke="#41444B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <path class="canvas__item_3" d="M18.5 40C23.5 27 40.5 27.5 45 39" stroke="#41444B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <path d="M6.5 61.5V7.5H22M6.5 61.5H51M6.5 61.5H2.5V67H18.5M51 61.5C49.7521 51.2047 51.8634 47.5669 57.5 42.5M51 61.5L53 67M57.5 42.5V7.5H42V3.5H22V7.5M57.5 42.5C63.9322 40.5972 67.3324 40.4186 72.5 44C67.3547 51.5339 70.5 64.5 84.5 67C83.8549 81.1329 65.5 88 53 67M53 67H45.5M18.5 67L13.5 85.5H19.5L21.7973 77M18.5 67H24.5M24.5 67H40M24.5 67L23 73M40 67H45.5M40 67L41.5 73M45.5 67L50.5 85.5H45L42.7027 77M41.5 73H23M41.5 73L42.7027 77M23 73L21.7973 77M42.7027 77H21.7973M22 7.5V9H42" stroke="#41444B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="61.5" cy="50.5" r="3" stroke="#41444B" stroke-width="3"/>
+                        <circle cx="58.5" cy="60.5" r="3" stroke="#41444B" stroke-width="3"/>
+                        <circle cx="64.5" cy="68.5" r="3" stroke="#41444B" stroke-width="3"/>
+                        <circle cx="73.5" cy="71.5" r="3" stroke="#41444B" stroke-width="3"/>
+                        
+                        <path class="canvas__item_1" d="M58 23L79.5 3.00001C82.7398 1.25676 86 3.00004 83.5 7.00001L63.5 28.5M58 23L55 28.5M58 23L63.5 28.5M63.5 28.5L58 32M58 32C55.6961 35.1415 54.014 36.0493 50.5 36.5C51.2877 31.5579 52.1593 29.5903 55 28.5M58 32C57.5826 30.7963 57.0213 30.0506 55 28.5" stroke="#41444B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <path d="M6.5 52C11.5519 54.2584 13.8392 53.9007 17.5 52C22.3485 49.5065 24.9582 49.7372 29.5 52C33.8935 53.9736 36.218 54.138 40 52C45.018 49.586 47.3594 49.3104 51 51.5" stroke="#41444B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 45.9887C12.0519 48.2471 13.8392 47.8893 17.5 45.9886C22.3485 43.4951 24.9582 44.2372 29.5 46.5C33.8935 48.4736 36.718 48.1266 40.5 45.9887C45.518 43.5746 48.8594 44.3104 52.5 46.5" stroke="#41444B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="canvas__item_2" d="M7 40.5585C12.0519 42.8168 13.8392 42.4591 17.5 40.5584C22.3485 38.0649 25.4582 38.2956 30 40.5585C34.3935 42.5321 36.718 42.6964 40.5 40.5584C44.96 37.5346 51.3516 39.2533 55.5 42" stroke="#41444B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                       
+                </div>
+                <div>
+                    <p class="slogan">High Quality Build</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+            <div class="box-additionally pencil">
+                <div class="cube">
+                    <svg width="87" height="88" viewBox="0 0 87 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.4201 85.6858L25.4201 24.4062L55.8692 24.4062C56.8825 24.4062 57.7048 23.6201 57.7048 22.6507L57.7048 1.75605C57.7048 0.786682 56.8825 0 55.8692 0L1.8355 0C0.822231 0 -8.40425e-05 0.786682 -8.40425e-05 1.75605L-8.40425e-05 85.6858C-8.40425e-05 86.6552 0.822231 87.4419 1.8355 87.4419L23.5845 87.4419C24.5977 87.4419 25.4201 86.6552 25.4201 85.6858ZM54.0336 3.51146L54.0336 20.8944L24.3371 20.8944L6.25872 3.51146L54.0336 3.51146ZM3.67099 6.0049L3.67099 83.9302L21.7494 84.176V78.3812H17.1975C16.1842 78.3812 15.3619 77.5951 15.3619 76.6258C15.3619 75.6564 16.1842 74.8697 17.1975 74.8697H21.7494V71.3582H17.1975C16.1842 71.3582 15.3619 70.5716 15.3619 69.6022C15.3619 68.6328 16.1842 67.8461 17.1975 67.8461H21.7494V64.3347L13.3067 64.3347C12.2934 64.3347 11.4711 63.548 11.4711 62.5786C11.4711 61.6098 12.2934 60.8232 13.3067 60.8232H21.7494V57.3111H17.1975C16.1842 57.3111 15.3619 56.5244 15.3619 55.5556C15.3619 54.5863 16.1842 53.7996 17.1975 53.7996H21.7494V50.2881H17.1975C16.1842 50.2881 15.3619 49.5014 15.3619 48.532C15.3619 47.5627 16.1842 46.776 17.1975 46.776H21.7494V43.2645H13.3067C12.2934 43.2645 11.4711 42.4778 11.4711 41.5084C11.4711 40.5391 12.2934 39.753 13.3067 39.753H21.7494V36.2409H17.1975C16.1842 36.2409 15.3619 35.4542 15.3619 34.4849C15.3619 33.5161 16.1842 32.7294 17.1975 32.7294H21.7494V29.2173H17.1975C16.1842 29.2173 15.3619 28.4312 15.3619 27.4619C15.3619 26.4925 16.1842 25.7058 17.1975 25.7058H21.7494V23.3006L3.67099 6.0049Z" fill="#41444B"/>
+                        <path class="pencil__item" fill-rule="evenodd" clip-rule="evenodd" d="M27.541 44.2345L27.541 44.2391L27.541 44.2525V44.2345ZM27.541 44.2391C27.5458 44.6152 27.6748 44.981 27.909 45.2818L40.9229 62.3923C40.9229 62.3923 41.0701 62.4987 41.1437 62.5697C41.1724 62.5974 41.1926 62.625 41.2121 62.6516C41.2427 62.6934 41.2714 62.7325 41.3277 62.7652L66.8208 80.852C68.7147 82.4762 71.4114 82.8985 73.7413 81.9348C74.969 81.3471 76.0201 80.4688 76.7974 79.3788L78.3432 77.3023C79.35 76.0739 79.9301 74.5706 80 73.0066C79.9245 70.8308 78.7318 68.8337 76.8155 67.6817L51.2488 49.6659C51.144 49.6075 51.0317 49.5612 50.9175 49.5239C50.9175 49.5239 50.8071 49.5239 50.7516 49.4174L29.9707 42.5658C29.0082 42.2518 27.9627 42.7504 27.6389 43.6786C27.5755 43.8591 27.5425 44.0481 27.541 44.2391ZM74.6435 70.5931C75.5804 71.102 76.2098 72.0109 76.3371 73.042C76.2597 73.8535 75.9266 74.6217 75.3802 75.2431L73.8338 77.2667C73.4252 77.8665 72.8694 78.3621 72.2138 78.7044L72.2011 78.7098C71.8573 78.8575 70.8471 79.2915 69.0112 77.9946L67.355 76.8228L70.1708 73.131L72.9686 69.4212L74.6435 70.5931ZM68.275 69.5814L70.0054 67.3094L50.6044 53.5886L44.972 60.9726L64.3731 74.6934L66.1029 72.4388L51.1202 61.7889C51.0554 61.748 50.9949 61.7053 50.9362 61.6572C50.1558 61.031 50.0504 59.9109 50.7004 59.1584C51.3498 58.4058 52.5113 58.303 53.2917 58.931L68.275 69.5814ZM47.2365 51.9909L42.3951 58.3456L39.3952 54.4049L42.4319 50.4113L47.2365 51.9909ZM37.1129 51.4049L38.7878 49.2045L34.3332 47.7488L37.1129 51.4049Z" fill="#41444B"/>
+                        </svg>
+                </div>
+                <div>
+                    <p class="slogan">High Quality Build</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
+        </div>
+            </section>
+        </main>
+
+    @@include('html/footer.html',{
+    })
+</body>
+</html>

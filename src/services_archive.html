@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+    "title":"services archive"
+})
+<body>
+<main class="main">
+    @@include('html/nav.html',{
+    })
+    
+    @@include('html/header.html',{
+        "title_style": 'title',
+        "header_img":'img_4.png',
+        "title":"services archive",
+        "text":"Home / Services Archive"
+    })
+
+    <section class="wrapper wrapper-margin">
+        @@include('html/additionally.html',{
+            "telephone":"",
+            "messeng":"",
+            "Benefits":{
+                "info":'ok',
+                "tag":'<a data-text="Call Us Today" class="subtitle" href="#">+1 123 4567 789</a>',
+            },
+        })
+    </section>
+
+    <div class="services services__direction wrapper">
+        @@include('html/boxMax.html',{
+            "title_style": 'subtitle',
+            "text_style": '',
+            "button_style": 'btn',
+            "content_style": 'services__direction-content',
+            context: {
+                arr: [{ "title": "Research & Analysis", "text": "lorem ipsum...", "button": "Learn more", "img": "<img class='services__direction-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Industry Development", "text": "lorem ipsum...", "button": "Learn more", "img": "<img class='services__direction-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Production Launch", "text": "lorem ipsum...", "button": "Learn more", "img": "<img class='services__direction-img' src='files/img/img1.jpg' alt='img'>"}]
+              },
+        })
+    </div>
+</main>
+
+    @@include('html/footer.html',{
+    })
+</body>
+</html>

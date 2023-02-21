@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+    "title":"portfolio"
+})
+<body>
+<main class="main">
+    @@include('html/nav.html',{
+    })
+    
+    @@include('html/header.html',{
+        "title_style": 'title',
+        "title":"portfolio",
+        "header_img":'img_4.png',
+        "text":"Home / Portfolio Archive"
+    })
+
+    <section class="wrapper wrapper-margin">
+        @@include('html/additionally.html',{
+            "telephone":"",
+            "messeng":"",
+            "Benefits":{
+                "info":'ok',
+                "tag":'<a data-text="Call Us Today" class="subtitle" href="#">+1 123 4567 789</a>',
+            },
+        })
+    </section>
+
+    <div class="services services__wrap wrapper">
+        @@include('html/boxMax.html',{
+            "title_style": '',
+            "text_style": 'slogan',
+            "button_style": 'cube',
+            "content_style": 'services__wrap-content',
+            context: {
+                arr: [{ "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"},
+        { "title": "Commercial", "text": "Benoit Architecture", "button": "+", "img": "<img class='services__wrap-img' src='files/img/img1.jpg' alt='img'>"}]
+              },
+        })
+    </div>
+</main>
+
+    @@include('html/footer.html',{
+    })
+</body>
+</html>

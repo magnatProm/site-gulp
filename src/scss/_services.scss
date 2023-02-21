@@ -1,0 +1,222 @@
+.services {
+
+    &__row {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        color: var(--background_color);
+    }
+
+    &__row * *:not([class="subtitle"], [class="cube"]) {
+        color: var(--background_color_dim);
+    }
+
+    &__row>* {
+        flex: 0 0 305px;
+        transition: 2s all;
+    }
+
+    &__row>*:hover {
+        flex-grow: 1;
+    }
+
+    &__row-content {
+        position: relative;
+    }
+
+    &__row-content>*:not(:nth-child(1)) {
+        margin-top: 30px;
+    }
+
+    &__row-content>*:last-child {
+        margin-top: 260px;
+    }
+
+    &__row-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: -webkit-fill-available;
+        z-index: -1;
+    }
+
+    &__row>*:nth-child(odd) {
+        background: var(--background_dim);
+    }
+
+    &__row>*:nth-child(even) {
+        background: var(--background_dim_accent);
+    }
+
+
+    &__wrap {
+        color: var(--background_color);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__wrap>* {
+        flex: 1 0 214px;
+        text-align: center;
+    }
+
+    &__wrap-content>*:not(:nth-child(1)) {
+        margin-top: 14px;
+    }
+
+    &__wrap-content {
+        padding: 119px 20px;
+        position: relative;
+    }
+
+    &__wrap-content:nth-child(odd):before {
+        background: var(--background_dim);
+    }
+
+    &__wrap-content:nth-child(even):before {
+        background: var(--background_dim_accent);
+    }
+
+    &__wrap-content:hover::before {
+        content: "";
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__wrap-min {
+        padding: 40px 26px;
+        text-align: initial;
+    }
+
+    &__wrap-min:hover::before {
+        display: none;
+    }
+
+    &__wrap-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: -webkit-fill-available;
+        z-index: 0;
+    }
+
+    &__wrap-content:hover &__wrap-img {
+        z-index: -2;
+    }
+
+
+    &__direction {
+        color: var(--background_color);
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__direction>* {
+        background: var(--accent_background_main);
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    &__direction-content *:not(img, :nth-child(2)) {
+        max-width: 355px;
+        margin-top: 33px;
+    }
+
+    &__direction-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 431px;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+
+    }
+
+    @media (max-width:780px) {
+        &__direction-img {
+            left: 0;
+            z-index: -1;
+            backdrop-filter: invert(2);
+            mix-blend-mode: color;
+        }
+
+        &__direction>* {
+            background: inherit;
+        }
+    }
+
+
+    &__projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+
+        color: var(--background_color);
+        gap: 20px;
+    }
+
+    &__projects * *:not([class="slogan"], [class="cube"]) {
+        color: var(--background_color_dim);
+    }
+
+    &__projects>* {
+        flex: 1 0 214px;
+        text-align: center;
+    }
+
+    &__projects-content:nth-child(1) {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 3;
+    }
+
+    &__projects-content>*:not(:nth-child(1)) {
+        margin-top: 14px;
+    }
+
+    &__projects-content {
+        position: relative;
+    }
+
+    &__projects-content:nth-child(odd):before {
+        background: var(--background_dim);
+    }
+
+    &__projects-content:nth-child(even):before {
+        background: var(--background_dim_accent);
+    }
+
+    &__projects-content:hover::before {
+        content: "";
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__projects-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: -webkit-fill-available;
+        z-index: 0;
+    }
+
+    &__projects-content:hover &__projects-img {
+        z-index: -2;
+    }
+}

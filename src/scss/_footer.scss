@@ -1,0 +1,40 @@
+.footer{
+    color: var(--background_color);
+
+    & *:not([class]){
+        color: var(--background_color_dim);
+    }
+
+    [data-text]::before{
+        color: var(--background_color_dim);
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        text-transform: lowercase;
+    }
+
+    &__flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    & > *{
+        flex: 1 1 390px;
+    }
+
+    &__max{
+        flex: 3 1 300px;
+    }
+
+    &__wrapper{
+        padding: clamp(1.875rem, 0.739rem + 5.68vw, 5rem) clamp(1.25rem, 0.227rem + 5.11vw, 4.063rem);
+        gap: 35px;
+    }
+
+    &__column > *:not(:last-child){
+        flex: 0 0 194px;
+    }
+    &__slogan{
+        margin-bottom: 20px;
+    }
+}

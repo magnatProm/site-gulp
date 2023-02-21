@@ -1,0 +1,216 @@
+:root {
+    --color: #16213E;
+    --color_dim: #41444B;
+    --accent_color_main: #D2153D;
+    --accent_color: #00215B;
+
+    --background_color: #FFFFFF;
+    --background_color_dim: #D4D7DD;
+    // --accent_background_main: #D2153D;
+    // --accent_background: #001ED3;
+    // --background: #00215B;
+    --accent_background_main: #FF1800;
+    --accent_background: #FF8073;
+    --background: #FF5240;
+
+    --body_background: #FFFFFF;
+    // --background_dim_accent: linear-gradient(0deg, rgba(210, 21, 61, 0.85), rgba(210, 21, 61, 0.85));
+    // --background_dim: linear-gradient(0deg, rgba(0 34 92 / 0.85), rgba(0 34 92 / 0.85));
+    --background_dim_accent: linear-gradient(0deg, rgba(255, 25, 0, 0.85), rgba(255, 25, 0, 0.85));
+    --background_dim: linear-gradient(0deg, rgba(255 128 115 / 0.85), rgba(255 128 115 / 0.85));
+    
+    --shadow: 0px 2px 25px rgba(0, 33, 91, 0.2);
+}
+// #2C17B1
+// #FF9F00
+.socials {
+    gap: 20px;
+
+    &__icon {
+        height: 40px;
+        width: auto;
+        padding: 8px;
+        background: var(--body_background);
+        border-radius: 50%;
+    }
+}
+
+.box {
+    padding: clamp(1.625rem, 1.08rem + 2.73vw, 3.125rem);
+}
+
+.box-min {
+    padding: 30px;
+}
+
+.wrapper {
+    max-width: 1150px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.wrapper-margin {
+    margin-top: -92px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.wrapper-align-items {
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@import "_null.scss";
+@import "_nav.scss";
+@import "_header.scss";
+@import "_services.scss";
+@import "_contact.scss";
+@import "_footer.scss";
+@import "_svg.scss";
+
+body {
+    background: var(--body_background);
+    position: relative;
+
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    color: var(--color_dim);
+
+}
+
+.main>*:not(.nav, .header, .banner) {
+    margin-bottom: clamp(3.563rem, 2.454rem + 5.54vw, 6.438rem);
+    // margin-top: 57px;
+}
+
+[data-text]::before {
+    content: attr(data-text);
+    display: block;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.title-max {
+    font-family: 'Kanit';
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 84px;
+    color: var(--background_color);
+}
+
+.title {
+    font-family: 'Kanit';
+    font-weight: 600;
+    font-size: clamp(2.938rem, 2.745rem + 0.96vw, 3.438rem);
+    line-height: 64px;
+}
+
+.subtitle {
+    font-family: 'Kanit';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 38px;
+}
+
+.title-min {
+    font-family: 'Kanit';
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--accent_color);
+}
+
+.slogan {
+    font-family: 'Kanit';
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-direction {
+    gap: 30px;
+}
+
+.flex-direction>* {
+    flex: 1 0 241px;
+}
+
+.background-accent {
+    background: var(--accent_background_main);
+}
+
+.background {
+    background: var(--background);
+}
+
+.btn-main {
+    background: var(--accent_background_main);
+    color: var(--background_color);
+    padding: 27px 60px 23px 60px;
+}
+
+.btn {
+    border: 3px solid #FFFFFF;
+    padding: 27px clamp(2.5rem, 2.045rem + 2.27vw, 3.75rem) 23px clamp(2.5rem, 2.045rem + 2.27vw, 3.75rem);
+    background: initial;
+    color: inherit;
+}
+
+.cube {
+    padding: 15px 16px;
+}
+
+.Benefits {
+    color: var(--accent_color);
+    background: var(--body_background);
+    box-shadow: var(--shadow);
+    max-width: 465px;
+    border-top: 3px solid var(--accent_background_main);
+}
+
+.Benefits *[data-text]::before {
+    color: var(--color_dim);
+}
+
+
+.info::first-line {
+    font-family: 'Kanit';
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--accent_color_main);
+}
+
+.center {
+    text-align: center;
+}
+
+.text>*:not(:nth-child(1)) {
+    margin-top: 20px;
+}
+
+.box-additionally {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    min-width: 315px;
+
+}
+
+@media (max-width: 400px) {
+    .box-additionally {
+        min-width: auto;
+        grid-template-columns: 1fr;
+    }
+}
+
+.banner * {
+    width: 100%;
+}

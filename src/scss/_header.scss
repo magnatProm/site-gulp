@@ -1,0 +1,17 @@
+.header{
+position: relative;
+padding: 155px 0px;
+color: var(--background_color);
+
+    &__text{
+        max-width: 638px;
+    }
+    &__img{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        bottom: 0;
+        height: -webkit-fill-available;
+    } 
+}
